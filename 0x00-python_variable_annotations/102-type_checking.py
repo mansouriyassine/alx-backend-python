@@ -6,6 +6,7 @@ and apply any necessary changes.
 
 from typing import Tuple, List, Any
 
+
 def zoom_array(lst: Tuple[Any, ...], factor: int = 2) -> List[Any]:
     """
     Zoom in on each element of the input tuple by
