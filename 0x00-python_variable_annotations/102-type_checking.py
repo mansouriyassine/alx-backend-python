@@ -6,11 +6,11 @@ def zoom_array(lst: Tuple[int, ...], factor: int = 2) -> Tuple[int, ...]:
     """
     Zoom in on each element of the input tuple by
     repeating it 'factor' times.
-    
+
     Args:
         lst (Tuple[int, ...]): The input tuple.
         factor (int): The factor by which to zoom in. Default is 2.
-    
+
     Returns:
         Tuple[int, ...]: The zoomed-in tuple.
     """
