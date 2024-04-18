@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """
-Write a type-annotated function make_multiplier that takes a float multiplier as argument
+Write a type-annotated function make_multiplier that takes
+a float multiplier as argument
 and returns a function that multiplies a float by multiplier.
 """
 
@@ -15,7 +16,8 @@ def make_multiplier(multiplier: float) -> Callable[[float], float]:
         multiplier (float): The multiplier value.
 
     Returns:
-        Callable[[float], float]: A function that multiplies a float by the multiplier.
+        Callable[[float], float]: A function that multiplies a
+        float by the multiplier.
     """
     def multiplier_function(x: float) -> float:
         return x * multiplier
