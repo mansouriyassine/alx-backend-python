@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from typing import Tuple, List
+from typing import Tuple, List, Any
 
 def zoom_array(lst: Tuple, factor: int = 2) -> List:
     zoomed_in: List = [
@@ -9,7 +9,7 @@ def zoom_array(lst: Tuple, factor: int = 2) -> List:
     return zoomed_in
 
 
-array = [12, 72, 91]
+array: Tuple[Any, ...] = (12, 72, 91)
 
 zoom_2x = zoom_array(array)
 
