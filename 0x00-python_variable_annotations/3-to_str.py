@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
-"""Write a type-annotated unction to_str that takes a float n
-as argument and returns.
+"""Write a type-annong representation of the float.
 """
 
 
 def to_str(n: float) -> str:
-    """Returns the string representation float"""
+    """Returns the strintation of the float"""
     return str(n)
