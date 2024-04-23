@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
 
+"""
+Module: 0-basic_async_syntax
+
+Contains an asynchronous coroutine for waiting a random delay.
+"""
+
 import asyncio
 import random
 
