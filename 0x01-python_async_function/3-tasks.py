@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
 
+"""
+Module: 3-task 3
+
+task 3
+"""
+
 import asyncio
 from typing import Generator
 
