@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
 
+"""
+Module: 2-measure_runtime
+
+Contains a function to measure the runtime of the wait_n coroutine.
+"""
+
 import asyncio
 import time
 from typing import Callable
