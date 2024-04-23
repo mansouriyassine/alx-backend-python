@@ -1,7 +1,19 @@
 #!/usr/bin/env python3
-"""
-Contains async_generator coroutine
-"""
+    """
+    Asynchronous generator coroutine that yields
+    random numbers between 0 and 10.
+
+    This coroutine loops 10 times, waiting for 1 second asynchronously
+    on each iteration, and then yields a random floating-point number
+    between 0 and 10.
+
+    Yields:
+        float: A random floating-point number between 0 and 10.
+
+    Returns:
+        AsyncGenerator[float, None]: An asynchronous
+        generator object that yields random numbers.
+    """
 
 import asyncio
 import random
