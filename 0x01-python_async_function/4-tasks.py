@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
 
+"""
+Module: 4-tasks
+
+Contains an asynchronous function for spawning multiple tasks.
+"""
+
 import asyncio
 from typing import List
 

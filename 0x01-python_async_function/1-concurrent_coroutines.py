@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
 
+"""
+Module: 1-concurrent_coroutines
+
+Contains an asynchronous routine for executing
+multiple coroutines at the same time.
+"""
+
 import asyncio
 from typing import List
 
