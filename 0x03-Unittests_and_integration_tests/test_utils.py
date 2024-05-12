@@ -13,6 +13,7 @@ from utils import (
     memoize
 )
 
+
 class TestAccessNestedMap(unittest.TestCase):
     @parameterized.expand([
         ({"a": 1}, ("a",), 1),
@@ -36,9 +37,10 @@ class TestAccessNestedMap(unittest.TestCase):
         with self.assertRaises(KeyError) as context:
             access_nested_map(nested_map, path)
         self.assertEqual(
-            str(context.exception), 
+            str(context.exception),
             f"Key '{expected_key}' not found in nested map"
         )
+
 
 class TestGetJson(unittest.TestCase):
     @parameterized.expand([
@@ -51,6 +53,7 @@ class TestGetJson(unittest.TestCase):
         response = get_json(test_url)
         mock_get.assert_called_once_with(test_url)
         self.assertEqual(response, test_payload)
+
 
 class TestMemoize(unittest.TestCase):
     class TestClass:
@@ -67,6 +70,7 @@ class TestMemoize(unittest.TestCase):
         instance.a_property()
         instance.a_property()
         mock_a_method.assert_called_once()
+
 
 if __name__ == "__main__":
     unittest.main()

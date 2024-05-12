@@ -32,7 +32,8 @@ class TestGithubOrgClient(unittest.TestCase):
 
     @patch('client.GithubOrgClient.org', new_callable=PropertyMock,
            return_value="test_org")
-    @patch('client.GithubOrgClient._public_repos_url', new_callable=PropertyMock,
+    @patch('client.GithubOrgClient._public_repos_url',
+           new_callable=PropertyMock,
            return_value="https://api.github.com/orgs/test_org/repos")
     @patch('client.get_json')
     def test_public_repos(
@@ -54,6 +55,7 @@ class TestGithubOrgClient(unittest.TestCase):
         client = GithubOrgClient("test_org")
         result = client.has_license(repo, license_key)
         self.assertEqual(result, expected_result)
+
 
 @parameterized_class(
     ('org_payload', 'repos_payload', 'expected_repos', 'apache2_repos'),
